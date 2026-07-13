@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Informativa sulla privacy — Uonder</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #0a84ff;
+      --card: #f6f7f9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --fg: #f2f2f7;
+        --muted: #98989f;
+        --border: #2c2c2e;
+        --accent: #0a84ff;
+        --card: #1c1c1e;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 17px;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 96px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+    h2 {
+      font-size: 21px;
+      margin: 40px 0 12px;
+      letter-spacing: -0.01em;
+      scroll-margin-top: 20px;
+    }
+    h3 { font-size: 18px; margin: 24px 0 8px; }
+    p, ul, ol { margin: 0 0 16px; }
+    ul, ol { padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: var(--muted); font-size: 15px; margin: 0; }
+    .lead { font-size: 18px; color: var(--fg); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .muted { color: var(--muted); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    th, td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { font-weight: 600; }
+    code {
+      font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      background: var(--card);
+      padding: 1px 5px;
+      border-radius: 5px;
+    }
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .toc { font-size: 15px; }
+    .toc ol { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Informativa sulla privacy di Uonder</h1>
+      <p class="meta">Ultimo aggiornamento: 11 luglio 2026</p>
+    </header>
+
+    <p class="lead">Uonder è un'app di viaggio per iOS che ti aiuta a salvare luoghi, organizzarli in itinerari giornalieri, calcolare percorsi, tenere un budget di spesa e trovare servizi nelle vicinanze. Questa informativa spiega quali dati l'app tratta, dove finiscono e quali diritti hai.</p>
+
+    <div class="card">
+      <strong>In breve:</strong> Uonder non gestisce server propri e non raccoglie i tuoi contenuti su nostri sistemi. I dati che crei (luoghi, note, foto, spese) restano sul tuo dispositivo e, se attivi la sincronizzazione, nel <strong>tuo</strong> account iCloud privato. Alcune funzioni comunicano con servizi Apple e con OpenStreetMap; la versione gratuita mostra annunci tramite Google AdMob.
+    </div>
+
+    <nav class="toc" aria-label="Indice">
+      <ol>
+        <li><a href="#titolare">Titolare del trattamento</a></li>
+        <li><a href="#dati">Quali dati trattiamo</a></li>
+        <li><a href="#terze-parti">Servizi di terze parti</a></li>
+        <li><a href="#pubblicita">Pubblicità e tracciamento (versione gratuita)</a></li>
+        <li><a href="#abbonamenti">Abbonamenti premium</a></li>
+        <li><a href="#conservazione">Conservazione e cancellazione</a></li>
+        <li><a href="#diritti">I tuoi diritti</a></li>
+        <li><a href="#minori">Minori</a></li>
+        <li><a href="#modifiche">Modifiche a questa informativa</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="titolare">1. Titolare del trattamento</h2>
+    <p>Il titolare del trattamento dei dati per l'app Uonder è lo sviluppatore dell'applicazione. Per qualsiasi richiesta relativa alla privacy puoi scrivere a <a href="mailto:luca.almasio@gmail.com">luca.almasio@gmail.com</a>.</p>
+
+    <h2 id="dati">2. Quali dati trattiamo</h2>
+    <p>Uonder non richiede la creazione di un account proprio e non raccoglie i tuoi dati su server gestiti da noi. I dati trattati sono i seguenti.</p>
+
+    <h3>2.1 Contenuti che crei tu</h3>
+    <p>Luoghi salvati, cartelle e itinerari, note di testo, fotografie che alleghi ai luoghi, voci di budget e spese. Questi contenuti sono memorizzati <strong>localmente sul tuo dispositivo</strong> tramite SwiftData. Se la sincronizzazione iCloud è attiva, vengono replicati nel database <strong>privato</strong> del tuo account iCloud (CloudKit). Non abbiamo accesso al contenuto del tuo database privato iCloud.</p>
+
+    <h3>2.2 Posizione</h3>
+    <p>Con il tuo permesso (<em>"mentre usi l'app"</em>), Uonder utilizza la posizione del dispositivo per:</p>
+    <ul>
+      <li>mostrarti luoghi e servizi rilevanti nelle vicinanze;</li>
+      <li>calcolare percorsi e indicazioni stradali;</li>
+      <li>recuperare le previsioni meteo per il tuo itinerario.</li>
+    </ul>
+    <p>La posizione viene usata al momento per fornire queste funzioni; non costruiamo né conserviamo uno storico dei tuoi spostamenti sui nostri sistemi. Le coordinate possono essere trasmesse ai servizi di mappe e dati descritti nella <a href="#terze-parti">sezione 3</a> per elaborare la tua richiesta. Puoi revocare l'accesso alla posizione in qualsiasi momento da <em>Impostazioni › Privacy e sicurezza › Localizzazione</em>.</p>
+
+    <h3>2.3 Fotografie</h3>
+    <p>Se scegli di allegare una foto a un luogo, l'immagine viene salvata insieme al luogo (sul dispositivo e, se attiva, in iCloud). Le foto non vengono caricate su nostri server né condivise con terze parti pubblicitarie.</p>
+
+    <h3>2.4 Preferenze e impostazioni</h3>
+    <p>Alcune preferenze dell'app e lo stato dell'itinerario attivo (per il widget nella schermata Home) sono salvati localmente tramite <code>UserDefaults</code> e un gruppo App condiviso. Questi dati non lasciano il dispositivo.</p>
+
+    <h3>2.5 Dati raccolti automaticamente</h3>
+    <p>Nella versione gratuita, l'SDK pubblicitario di Google può raccogliere identificatori del dispositivo e dati diagnostici, come descritto nelle sezioni <a href="#terze-parti">3</a> e <a href="#pubblicita">4</a>.</p>
+
+    <h2 id="terze-parti">3. Servizi di terze parti</h2>
+    <p>Per fornire alcune funzioni, Uonder invia richieste ai seguenti servizi. Ciascuno tratta i dati secondo la propria informativa sulla privacy.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Servizio</th>
+            <th>Dati trasmessi</th>
+            <th>Finalità</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Apple iCloud / CloudKit</strong></td>
+            <td>I tuoi contenuti (luoghi, note, foto, spese)</td>
+            <td>Sincronizzazione tra i tuoi dispositivi nel tuo database privato</td>
+          </tr>
+          <tr>
+            <td><strong>Apple MapKit / Directions</strong></td>
+            <td>Coordinate, termini di ricerca luoghi</td>
+            <td>Mappe, ricerca di luoghi, calcolo dei percorsi</td>
+          </tr>
+          <tr>
+            <td><strong>Apple WeatherKit</strong></td>
+            <td>Coordinate di posizione</td>
+            <td>Previsioni meteo per l'itinerario</td>
+          </tr>
+          <tr>
+            <td><strong>OpenStreetMap — Overpass API</strong><br><span class="muted">overpass-api.de</span></td>
+            <td>Coordinate dell'area consultata</td>
+            <td>Ricerca di bagni pubblici e servizi nelle vicinanze</td>
+          </tr>
+          <tr>
+            <td><strong>Google AdMob</strong><br><span class="muted">solo versione gratuita</span></td>
+            <td>Identificatori del dispositivo, dati diagnostici e, se acconsenti, l'identificatore pubblicitario</td>
+            <td>Visualizzazione degli annunci</td>
+          </tr>
+          <tr>
+            <td><strong>Apple App Store / StoreKit</strong></td>
+            <td>Gestito da Apple</td>
+            <td>Acquisto e gestione degli abbonamenti premium</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="muted">Informative dei principali fornitori: <a href="https://www.apple.com/it/legal/privacy/" target="_blank" rel="noopener">Apple</a>, <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OpenStreetMap Foundation</a>.</p>
+
+    <h2 id="pubblicita">4. Pubblicità e tracciamento (versione gratuita)</h2>
+    <p>La versione gratuita di Uonder mostra annunci interstitial forniti da Google AdMob. Per gli annunci, Google può utilizzare identificatori del dispositivo.</p>
+    <p>In conformità con i requisiti di Apple, prima di consentire il tracciamento tra app tramite l'identificatore pubblicitario (IDFA), l'app ti mostra la richiesta di <em>App Tracking Transparency</em>. Se non concedi il permesso, gli annunci ti verranno comunque mostrati ma in forma non personalizzata. Puoi modificare questa scelta in qualsiasi momento da <em>Impostazioni › Privacy e sicurezza › Tracciamento</em>.</p>
+    <p>Passando alla versione premium, gli annunci vengono rimossi.</p>
+
+    <h2 id="abbonamenti">5. Abbonamenti premium</h2>
+    <p>Le funzioni premium sono disponibili tramite abbonamento auto-rinnovabile gestito da Apple con StoreKit. I pagamenti sono elaborati da Apple: non riceviamo né conserviamo i dati della tua carta o del metodo di pagamento. La gestione e la cancellazione dell'abbonamento avvengono dalle impostazioni dell'App Store del tuo ID Apple.</p>
+
+    <h2 id="conservazione">6. Conservazione e cancellazione</h2>
+    <ul>
+      <li><strong>Sul dispositivo:</strong> i tuoi contenuti restano finché non li elimini nell'app o disinstalli Uonder.</li>
+      <li><strong>Su iCloud:</strong> se la sincronizzazione è attiva, i dati restano nel tuo database privato iCloud finché non li elimini. Puoi gestirli dalle impostazioni iCloud del tuo ID Apple.</li>
+      <li><strong>Cancellazione:</strong> eliminando un contenuto nell'app, o disinstallando l'app e rimuovendo i relativi dati da iCloud, i dati vengono rimossi. Non conserviamo copie sui nostri sistemi perché non riceviamo i tuoi contenuti.</li>
+    </ul>
+
+    <h2 id="diritti">7. I tuoi diritti</h2>
+    <p>In base alla normativa applicabile (incluso il GDPR nell'UE), puoi esercitare i diritti di accesso, rettifica, cancellazione, limitazione e portabilità dei dati, oltre al diritto di opporti al trattamento. Poiché i tuoi contenuti risiedono sul tuo dispositivo e nel tuo account iCloud, puoi esercitare gran parte di questi diritti direttamente dall'app e dalle impostazioni di iOS/iCloud. Per qualsiasi richiesta o chiarimento puoi comunque contattarci ai recapiti in fondo. Hai inoltre il diritto di presentare reclamo all'autorità di controllo competente.</p>
+
+    <h2 id="minori">8. Minori</h2>
+    <p>Uonder non è destinata a bambini di età inferiore ai 13 anni e non raccoglie consapevolmente dati personali di minori di tale età.</p>
+
+    <h2 id="modifiche">9. Modifiche a questa informativa</h2>
+    <p>Possiamo aggiornare questa informativa per riflettere cambiamenti nell'app o negli obblighi di legge. La versione aggiornata sarà pubblicata a questo indirizzo con una nuova data di "Ultimo aggiornamento". Le modifiche sostanziali potranno essere segnalate anche all'interno dell'app.</p>
+
+    <h2 id="contatti">10. Contatti</h2>
+    <p>Per domande o richieste relative a questa informativa o al trattamento dei tuoi dati:</p>
+    <p>Email: <a href="mailto:luca.almasio@gmail.com">luca.almasio@gmail.com</a></p>
+
+    <footer>
+      <p>Uonder — Informativa sulla privacy. Questo documento descrive le pratiche di trattamento dei dati dell'applicazione Uonder per iOS.</p>
+    </footer>
+  </div>
+</body>
+</html>
